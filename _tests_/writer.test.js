@@ -16,7 +16,7 @@ describe('test writer.js functions', () => {
     writeJson({ abbey: 2 }, './data/new.txt');
     expect(fs.writeFileSync).toBeCalled();
     expect(fs.writeFileSync.mock.calls[1][0]).toEqual('./data/new.txt');
-    expect(fs.writeFileSync.mock.calls[1][1]).toEqual(JSON.stringify({ abbey: 2 }));
+    expect(fs.writeFileSync.mock.calls[1][1]).toEqual(JSON.stringify({ abbey: 2 }, null, 2));
   });
 
 });
