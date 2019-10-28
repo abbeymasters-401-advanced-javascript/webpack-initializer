@@ -1,4 +1,4 @@
-const writeJson = require('../writer/writer');
+const { writeJson } = require('../writer/writer');
 
 function eslintWriter(path) {
 
@@ -90,6 +90,4 @@ function eslintWriter(path) {
   writeJson(eslintInfo, `${path}/.eslintrc`);
 }
 
-module.exports = {
-  eslintWriter
-};
+module.exports = eslintWriter;

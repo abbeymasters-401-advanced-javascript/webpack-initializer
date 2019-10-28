@@ -1,4 +1,4 @@
-const writeJson = require('../writer/writer');
+const { writeJson } = require('../writer/writer');
 
 function babelWriter(path) {
 
@@ -14,6 +14,4 @@ function babelWriter(path) {
   writeJson(babelInfo, `${path}/.babelrc`);
 }
 
-module.exports = {
-  babelWriter
-};
+module.exports = babelWriter;

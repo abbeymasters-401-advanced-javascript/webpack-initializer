@@ -1,4 +1,4 @@
-const writeJson = require('../writer/writer');
+const { writeJson } = require('../writer/writer');
 
 function packageJsonWriter(path) {
 
@@ -68,6 +68,4 @@ function packageJsonWriter(path) {
 }
 
 
-module.exports = {
-  packageJsonWriter
-};
+module.exports = packageJsonWriter;

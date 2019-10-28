@@ -21,6 +21,9 @@
     "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
     "build": "webpack -p --devtool source-map"
   },
+  "bin": {
+    "create-abbeys-app": "./index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
