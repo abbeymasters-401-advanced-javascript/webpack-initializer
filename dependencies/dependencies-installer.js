@@ -8,5 +8,4 @@ function dependenciesInstaller(path) {
   installer(path, packages, true);
 }
 
-
 module.exports = dependenciesInstaller;

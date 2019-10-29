@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --verbose",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
+    "build": "webpack -p --devtool source-map"
   },
   "bin": {
     "create-abbeys-webpack-initializer": "./src/index.js"
