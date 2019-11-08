@@ -1,13 +1,14 @@
 {
   "name": "create-abbeys-webpack-initializer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "src/index.js",
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "npm run test -- --watch",
     "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
-    "build": "webpack -p --devtool source-map"
+    "build": "webpack -p --devtool source-map",
+    "lint": "eslint ."
   },
   "bin": {
     "create-abbeys-webpack-initializer": "./src/index.js"
